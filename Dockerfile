@@ -10,6 +10,8 @@ RUN apt-get update && \
     git
 RUN easy_install pip
 RUN pip install ansible==2.1.0.0
+RUN apt-get update && \
+      apt-get -y install sudo
 
 RUN useradd -m ansible -s /bin/bash
 RUN mkdir /home/ansible/.ssh && \
