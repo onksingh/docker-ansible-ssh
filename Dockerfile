@@ -9,7 +9,7 @@ RUN apt-get update && \
     libssl-dev \
     git
 RUN easy_install pip
-RUN pip install ansible==2.1.0.0
+RUN pip install ansible
 RUN apt-get update && \
       apt-get -y install sudo
 
